@@ -1,0 +1,560 @@
+<!doctype html>
+<html>
+<head>
+<title>Mindjet Company Dashboard - Sales and Marketing</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Refresh" content="180; "> 
+
+<link href='http://fonts.googleapis.com/css?family=Oswald|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+<style>
+html, body, strong, th {
+width:100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+font-family: 'Oswald', sans-serif;
+letter-spacing:0.05em;
+color:#f4f4f4;
+font-weight:normal!important;
+}
+div#top {
+width:100%;
+height:11%;
+background:#0b0f13;
+}
+img#logo {
+height:80%;
+margin-top:0.9em;
+padding-left:1.2em;
+float:left;
+position:relative;
+align:center;
+padding-right:1em;
+}
+div#topright {
+float:right;
+padding-right:3.5%;
+text-align:right;
+padding-top:1.6em;
+}
+div#timeband {
+color:#cacaca;
+border-bottom:#444 dashed 1px;
+font-size:1.3em!important;
+}
+span#quarter {
+padding-right:1.5em;
+color:#888;
+font-size:1.1em!important;
+text-transform:uppercase;
+}
+div#middle {
+width:100%;
+height:75%;
+text-align:center;
+}
+img.background-image {
+position: fixed;
+height: 79%;
+width:100%;
+z-index:-1;
+top: 11%;
+left: 0;
+}
+img#t-line {
+position: fixed;
+height: 77%;
+left:6.5%;
+top: 12%;
+}
+div#bottom {
+width:100%;
+height:10%;
+background:#ff0000;
+position:absolute;
+bottom:0;
+}
+.row0 { 
+position:fixed;
+width:100%;
+top:12%;
+height:100%;
+}
+.row1 { 
+position:fixed;
+width:100%;
+top:11%;
+bottom:72%;
+height:100%;
+}
+.row2 { 
+position:fixed;
+width:100%;
+top:28%;
+bottom:55.5%;
+height:100%;
+}
+.row3 { 
+position:fixed;
+width:100%;
+top:45%;
+bottom:39%;
+height:100%;
+}
+.row4 { 
+position:fixed;
+width:100%;
+top:63.2%;
+bottom:39%;
+height:100%;
+}
+.col1 {
+font-size:1.2em;
+text-align:left;
+position:relative;
+margin-left:6.5%;
+letter-spacing:0.05em;
+width:7%;
+text-shadow:0.01em 0.05em black;
+color: #e4e4e4;
+}
+.dash-border {
+  border:1px dashed #888;
+}
+#marketing-label {
+position:fixed;
+top:17.5%;
+}
+#lead-qual-label {
+position:fixed;
+top:34%;
+}
+#sales-label {
+position:fixed;
+top:51%;
+}
+.col2 {
+position:relative;
+left:22.9%;
+letter-spacing:0.05em;
+width:25%;
+text-align:center;
+text-shadow:0.01em 0.1em #111;
+}
+div.label-big {
+font-size:1.3em;
+color:#f4f4f4;
+padding-top:0.1em;
+}
+div.data {
+font-size:2.8em;
+color:#009ab8;
+letter-spacing:0.05em;
+margin-top:-0.7em;
+text-shadow:0.05em 0.05em black;
+}
+div#marketing-label-big, div#lead-qual-label-big, div#opportunities-label-big {
+margin-top:1em;
+}
+div#closed-label-big {
+margin-top:0.35em;
+}
+.col3 {
+text-align:center;
+position:relative;
+left:53%;
+width:23%;
+text-shadow:0.01em 0.1em #111;
+height:100%;
+}
+.col4 {
+text-align:left;
+position:fixed;
+left:67%;
+width:33%;
+margin-top:-1.75%;
+}
+/* ----- stages table ----- */
+#openTable {
+left:72%;
+top:53%;
+bottom:18%;
+position:fixed;
+width:25em;
+right:6%;
+}
+
+div#fchArea tr {
+background:none!important;
+}
+table.reportTable {
+color:#bbb;
+}
+table.reportTable strong {
+color:#009ab8;
+font-family:'droid sans mono', monaco, courier;
+}
+div#fchArea tr#headerRow_0.headerRow, .drilldown {
+display:none;
+}
+tr.breakRowClassBottom td {
+float:right;
+margin-top:-1.4em;
+padding-left:6em;
+font-family:'droid sans mono', monaco, courier;
+color:#009ab8;
+}
+html body div#middle div#row3.row3 div.col4 div#open-ops-table div#fchArea table.reportTable tbody tr.breakRowClass0 td.nowrapCell {
+
+margin-right:-11em;
+}
+tr.grandTotal td.nowrapCell {
+padding-top:5px;
+font-family:'droid sans mono', monaco, courier;
+color:#009ab8;
+}
+div#fchArea {
+
+}
+
+div#closed-number strong, div#opportunities-number strong  {
+color:#009ab8;
+}
+
+div#marketing-number a, div#lead-qual-number a {
+text-decoration:none!important;
+color:#009ab8!important;
+}
+
+img#mindjet-logo {
+margin-left:1.9em;
+margin-top:0.5em;
+}
+div#last-updated {
+font-family:'droid sans mono', monaco, courier;
+color:#999;
+position:fixed;
+right:3.5%;
+bottom:12%;
+text-align:right;
+font-size:.9em;
+white-space:nowrap;
+}
+
+#closed-deals-table-label {
+font-family: 'Oswald', sans-serif;
+letter-spacing:0.05em;
+color:#bbb;
+font-weight:normal!important;
+float:left;
+margin-left:-1px;
+}
+tr.grandTotal td.nowrapCell {
+    position: absolute;
+    right: 2.8em;
+    margin-top:-2px;
+}
+/* -- NEW THIS WEEK COLUMN -- */
+div#ntw-title {
+width:100%;
+font-size:1em;
+}
+div.ntw-label {
+font-size:0.7em;
+width:100%;
+left:60%;
+width:8.8%;
+position:fixed;
+}
+div.ntw-value {
+font-size:1.9em;
+width:100%;
+left:60%;
+width:8.8%;
+position:fixed;
+}
+
+/*--ntw labels -- */
+
+div#ntw-leads-label {
+top:16%;
+bottom:82%;
+}
+div#ntw-qualified-label {
+top:32.2%;
+bottom:65.8%;
+}
+div#ntw-open-label {
+top:49.2%;
+bottom:48.8%;
+}
+div#ntw-closed-label {
+top:66%;
+bottom:32%;
+}
+
+/*--ntw values -- */
+
+div#ntw-leads-value {
+top:17.8%;
+bottom:77.2%;
+}
+div#ntw-qualified-value {
+top:34%;
+bottom:61%;
+}
+div#ntw-open-value {
+top:51%;
+bottom:44%;
+}
+div#ntw-closed-value {
+top:67.8%;
+bottom:27.2%;
+}
+</style>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ba-replacetext.js"></script>
+<script src="js/addcommas.js"></script>
+</head>
+
+<body>
+
+<div id="top">
+	<img id="logo" src="images/logo.png">
+	<div id="topright">
+		<div id="timeband"><span id="quarter">Q1 2012</span>January 1 - March 31</div>
+	</div>
+</div><!--end div#top-->
+
+<div id="middle">
+
+<div class="row0" id="row0">
+	<div class="col1"></div>
+	<div class="col2"></div>
+	<div class="col3">
+		<div id="ntw-title">New This Week</div>
+	</div>
+	<div class="col4"></div>
+</div>
+<div class="row1" id="row1">
+	<div class="col1"><div class="label" id="marketing-label">Marketing</div></div>
+	<div class="col2">
+		<div class="label-big" id="marketing-label-big">Marketing Leads</div><br>
+		<div class="data" id="marketing-number"><img id="spinner" src="images/ajax-loader.gif"></div>
+	</div>
+	<div class="col3">
+		<div class="ntw-label" id="ntw-leads-label">Leads</div>
+		<div class="ntw-value" id="ntw-leads-value"><img id="spinner" src="images/ajax-loader.gif"></div>
+	</div>
+	<div class="col4"></div>
+</div>
+<div class="row2" id="row2">
+	<div class="col1"><div class="label" id="lead-qual-label">Lead Qual</div></div>
+	<div class="col2">
+		<div class="label-big" id="lead-qual-label-big">Marketing Qualified Leads</div><br>
+		<div class="data" id="lead-qual-number"><img id="spinner" src="images/ajax-loader.gif"></div>
+	</div>
+	<div class="col3">
+		<div class="ntw-label" id="ntw-qualified-label">Qualified Leads</div>
+		<div class="ntw-value" id="ntw-qualified-value"><img id="spinner" src="images/ajax-loader.gif"></div>
+	</div>
+	<div class="col4"></div>
+</div>
+<div class="row3" id="row3">
+	<div class="col1"><div class="label" id="sales-label">Sales</div></div>
+	<div class="col2">
+		<div class="label-big" id="opportunities-label-big">Opportunities</div><br>
+		<div class="data" id="opportunities-number"><img id="spinner" src="images/ajax-loader.gif"></div>
+	</div>
+	<div class="col3">
+		<div class="ntw-label" id="ntw-open-label">Opportunities</div>
+		<div class="ntw-value" id="ntw-open-value"><img id="spinner" src="images/ajax-loader.gif"></div>
+	</div>
+	<div class="col4" id="openTable"><div id="open-ops-table"><img id="spinner" src="images/ajax-loader.gif"></div></div>
+</div>
+<div class="row4" id="row4">
+	<div class="col1"></div>
+	<div class="col2">
+		<div class="label-big" id="closed-label-big">Closed Deals</div><br>
+		<div class="data" id="closed-number"><img id="spinner" src="images/ajax-loader.gif"></div>
+	</div>
+	<div class="col3">
+		<div class="ntw-label" id="ntw-closed-label">Closed Deals</div>
+		<div class="ntw-value" id="ntw-closed-value"><img id="spinner" src="images/ajax-loader.gif"></div>
+	</div>
+<div id="last-updated"></div>
+</div>
+
+<img src="images/T-line.png" id="t-line">
+
+<img class="background-image" src="images/middle-bg-w-funnel-phase2.png">
+</div><!--end div#middle-->
+
+<div id="bottom">
+<a href="http://www.mindjet.com"><img src="images/mindjet-logo.png" id="mindjet-logo"></a>
+
+</div><!--end div#bottom-->
+
+<!-- ===== LAST WEEK VALUES ===== -->
+
+<table style="display:none!important;" id="last-week-values">
+	<!-- 
+	<tr><td id="lw-snapshot-date">1/4/2011 12pm</td></tr>
+	<tr><td id="lw-leads">5176</td></tr>
+	<tr><td id="lw-qualified">4042</td></tr>
+	<tr><td id="lw-open">2731</td></tr>
+	<tr><td id="lw-closed">328</td></tr>
+	-->
+	<!--
+	<tr><td id="lw-snapshot-date">1/10/2011 12pm</td></tr>
+	<tr><td id="lw-leads">16000</td></tr><!--fudged-->
+	<tr><td id="lw-qualified">16000</td></tr><!--fudged-->
+	<tr><td id="lw-open">2800</td></tr><!--fudged-->
+	<tr><td id="lw-closed">1200</td></tr><!--fudged-->
+    -->
+
+	<!--   
+	<tr><td id="lw-snapshot-date">1/17/2011 12pm</td></tr>
+	<tr><td id="lw-leads">26898</td></tr>
+	<tr><td id="lw-qualified">20467</td></tr>
+	<tr><td id="lw-open">2870</td></tr>
+	<tr><td id="lw-closed">1752</td></tr>
+    -->
+    
+	<tr><td id="lw-snapshot-date">1/23/2011 12pm</td></tr>
+	<tr><td id="lw-leads">37885</td></tr>
+	<tr><td id="lw-qualified">28469</td></tr>
+	<tr><td id="lw-open">2937</td></tr>
+	<tr><td id="lw-closed">2874</td></tr>
+	
+<!--
+	<tr><td id="lw-snapshot-date">1/31/2011 1pm</td></tr>
+	<tr><td id="lw-leads">49509</td></tr>
+	<tr><td id="lw-qualified">38092</td></tr>
+	<tr><td id="lw-open">3066</td></tr>
+	<tr><td id="lw-closed">4306</td></tr>
+-->
+
+</table>
+
+<script type="text/javascript">
+$(function() {
+
+	// 1 - MARKETING LEADS
+	$('div#marketing-number').load('1-leads.html a:contains("1-50")', function(){
+		$('a').replaceText( '1-50 of ', '' );
+		$('a').replaceText( 'about ', '' );
+
+		// thousands separator
+		var myNum1 =  $('div#marketing-number a').html();
+		var myNum2 = parseInt(myNum1);
+		var numWithCommas = addCommas(myNum2);
+		$('div#marketing-number a').html(numWithCommas);
+		// last week column
+	    var lwLeads  = $('td#lw-leads').html();
+	    var lwLeads  = parseInt(lwLeads);
+	    var ntwLeads = myNum2 - lwLeads;
+	    $('div#ntw-leads-value').html(ntwLeads);
+	    
+	});
+	
+	// 2 - MARKETING QUALIFIED LEADS	
+	$('div#lead-qual-number').load('2-qualified.html a:contains("1-50")', function(){
+		$('a').replaceText( '1-50 of ', '' );
+		$('a').replaceText( 'about ', '' );
+		
+		// thousands separator
+		var myNum3 =  $('div#lead-qual-number a').html();
+		var myNum4 = parseInt(myNum3);
+		var numWithCommas2 = addCommas(myNum4);
+		$('div#lead-qual-number a').html(numWithCommas2);
+		// last week column
+	    var lwQual  = $('td#lw-qualified').html();
+	    var lwQual  = parseInt(lwQual);
+	    var ntwQual = myNum4 - lwQual;
+	    $('div#ntw-qualified-value').html(ntwQual);
+	    
+	});
+
+	// 3 - OPPORTUNITIES
+	$('div#opportunities-number').load('3-open-ops.html div#fchArea table.reportTable tbody tr.grandTotal td strong', function(){
+		$('td').replaceText( 'USD ', '$' );
+		$('strong').replaceText( ' (', ' ' );
+		$('strong').replaceText( ' records)', '' );
+		$('strong').replaceText( 'Grand Totals ', '' );
+		// last week column
+	    var lwOpen  = $('td#lw-open').html();
+	    var lwOpen  = parseInt(lwOpen);
+	    var nowOpen = $('div#opportunities-number strong').html();
+	    var nowOpen = nowOpen.replace(/\,/g,'');
+	    var ntwOpen = nowOpen - lwOpen;
+	    $('div#ntw-open-value').html(ntwOpen);
+	});
+	
+		// 3.1 OPPORTUNITIES BY STAGE TABLE
+	$('div#open-ops-table').load('3-open-ops.html #fchArea', function(){
+		$('td').replaceText( 'USD ', '$' );
+		$('strong').replaceText( ' (', ' ' );
+		$('strong').replaceText( ' records)', '' );
+		$('strong').replaceText( 'Stage: ', '' );	
+   		$('tr.breakRowClass0').find("td:eq(0)").remove(); 
+   		$('tr.grandTotalTop').remove(); 
+   		$('tr.grandTotal').find("td:eq(0)").remove(); 
+   		$('table.reportTable tr').find("td:eq(1)").remove();
+   		var gitIt = $('tr.grandTotal td.nowrapCell');
+   		$(gitIt).detach();
+   		//$('tr.grandTotal').prepend(gitIt);
+   		$('tr.grandTotal').load('4-closed.html div#fchArea table.reportTable tbody tr.breakRowClass0 td.nowrapCell:first', function(){	
+   				$('td').replaceText( 'USD ', '$' );
+   				$('tr.grandTotal').prepend( '<td id="closed-deals-table-label">Closed Deals<div id="closed-deals-table-count></div></td>' );
+	    });
+	
+	});
+		
+	
+	// 4 - CLOSED DEALS	
+	$('div#closed-number').load('4-closed.html div#fchArea table.reportTable tbody tr.breakRowClass0 td strong', function(){
+		$('td').replaceText( 'USD ', '$' );
+		$('strong').replaceText( ' (', ' ' );
+		$('strong').replaceText( ' records)', '' );
+		$('strong').replaceText( 'Stage: ', '' );
+		// last week column
+	    var lwClosed  = $('td#lw-closed').html();
+	    var lwClosed  = parseInt(lwClosed);
+	    var nowClosed = $('div#closed-number').text();
+	    var nowClosed = nowClosed.replace(/\,/g,'');
+	    var ntwClosed = nowClosed - lwClosed;
+	    $('div#ntw-closed-value').html(ntwClosed);
+	});
+
+	// hotlink reports
+	$('div#marketing-number').click(function() {
+    	window.location = "https://app-g.marketo.com/#SL15602879A1";
+	});
+	
+	$('div#lead-qual-number').click(function() {
+    	window.location = "https://app-g.marketo.com/#SL16290418A1";
+	});
+	
+	$('div#opportunities-number').click(function() {
+    	window.location = "https://na11.salesforce.com/00OG0000004JFY1";
+	});
+	
+	$('div#closed-number').click(function() {
+    	window.location = "https://na11.salesforce.com/00OG0000004JFXw";
+	});
+
+	// 5 - LAST UPDATED
+	$('div#last-updated').load('5-updated.html div#last-updated', function(){
+	});
+
+
+});
+
+</script>
+</body>
+</html>

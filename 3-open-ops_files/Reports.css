@@ -1,0 +1,406 @@
+/**
+ * Included in every page of the report wizard, including the run-results page.
+ */
+ 
+.floatingHeader {
+    position: fixed;
+    top: 5px;
+    background-color: #aaaaff;
+    opacity: 0.95;
+    border: 1px solid #808080;
+    /* Padding is used for an "overhang" effect */
+    padding: 0px 3px;
+    display: none;
+}
+
+/* Messaging box styles */
+.saveSummaryBox {
+    padding: 4px;
+    border: 1px solid #DDD;
+    background-color: #EEE;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.saveSummaryBox td .labelCol {
+	text-align: right;
+	padding-bottom: 8px;
+	white-space: nowrap;
+	display: block;
+	width: 100%;
+}
+
+.saveSummaryBox .saveSummaryBoxDesc {
+	padding-bottom: 30px;
+}
+
+.saveSummaryBoxLabel {
+    margin-top: 20px;
+}
+
+.reportOutput table {
+    margin-right: 40px;
+}
+
+/* undo the margin style for the floating header */
+.floatingHeader table {
+    margin-right: 0px;
+}    
+
+.reportWizardButtons {
+	margin-bottom: 30px;
+}
+
+
+@media print {
+    .floatingHeader {
+        visibility: hidden;
+    }
+}
+
+.numOne {
+    background-image:url("/img/analytics/chart_thumb/numDots_sprite.gif");
+    height: 18px;
+    width: 18px;
+    background-position: 0px 0px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.numTwo {
+    background-image:url("/img/analytics/chart_thumb/numDots_sprite.gif");
+    height: 18px;
+    width: 18px;
+    background-position: 0px -18px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.numThree {
+    background-image:url("/img/analytics/chart_thumb/numDots_sprite.gif");
+    height: 18px;
+    width: 18px;
+    background-position: 0px -36px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.reportTab .reportList .entryActions .noEdit{
+	opacity: 0.0; filter: alpha(opacity=0); zoom: 1;
+}
+
+.list td.actionColumn span.actionLink.noEdit{
+	opacity: 0.0; filter: alpha(opacity=0); zoom: 1;
+}
+
+
+
+/* Begin Reports */
+.reportTab .roleSelector .drillDownPath,
+.reportTab .roleSelector .drillDownOptions{
+    margin-left: 0;
+}
+.reportTab .csvSetup .bPageBlock{
+    background-color: transparent;
+}
+.reportTab .drilldownText{
+    padding: 3px 0 3px 16px;
+}
+.ReportListCustomize .bPageBlock .pbBody{
+    margin-top: 7px;
+}
+.reportTab .searchFilterFieldsHolderFirst .searchFilterFields {
+    background: none;
+}
+.reportTab .searchFilterFieldsHolder .searchFilterFields {
+    border: 0;
+}
+.reportTab .bPageTitle .ptBody .content {
+    padding-left: 0;
+}
+.reportTab .progressIndicator {
+    margin-left: 0;
+    color: #434343;
+}
+.reportTab .progressIndicator #status {
+    font-size: 100%;
+}
+.reportTab .bFilterReport {
+    margin-left: 0;
+    color: #434343;
+}
+.bFilterReport .btn,
+.bFilterReport .btnDisabled,
+.bFilterReport .menuButton .menuButtonButton {
+    font-size:.9em;
+    margin:0 1px;
+    margin-right: 6px;
+}
+.bGeneratedReport .bPageBlock {
+    border: 1px solid #D4DADC;
+    border-width-top: 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.bGeneratedReport .bPageBlock .pbBody {
+    padding: 0;
+}
+.bGeneratedReport .bPageBlock .pbBody .pbSubblock .pbSubbody {
+    padding: 0;
+}
+.bGeneratedReport .chartDiv {
+    margin: 10px;
+}
+.bGeneratedReport .chartRule {
+    border: 0;
+    line-height: 3px;
+    margin: 5px 0;
+}
+.bGeneratedReport .chartEditLinks a,
+.bPageBlock .reportHeader a {
+    color: #015ba7;
+    text-decoration: none;
+}
+.bGeneratedReport .chartEditLinks a:hover,
+.bPageBlock .reportHeader a:hover {
+    text-decoration: underline;
+}
+.bGeneratedReport .chartEditLinks a:first-child {
+    padding-left: 0;
+}
+.bPageBlock .reportHeader {
+    padding: 0;
+}
+.bPageBlock .filterHeader {
+    border: 1px solid #cccccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin: 10px;
+    padding: 12px;
+}
+.bPageBlock .filterHeader .filteredBy {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #4a4a56;
+}
+.bPageBlock .filterHeader .filterAction {
+    font-weight: normal;
+}
+.reportParameters label, .reportParameters .label {
+    font-size: 1em;
+    color: #434343;
+}
+.bPageBlock .reportOutput .reportTable {
+    border-style: solid;
+    border-color: #D4DADC;
+    border-width: 1px 0;
+    margin: 0;
+}
+.bPageBlock .reportOutput .floatingHeader {
+    background: #fff url('/img/alohaSkin/grid_headerbg.gif') 0 bottom repeat-x;
+    border-color: #ADB0B1;
+}
+.floatingHeader table {
+    height: 100%;
+}
+.bPageBlock .reportOutput .floatingHeader th {
+    border-style: solid;
+    border-color: #D4DADC;
+    border-width: 0 0 0 1px;
+}
+.bPageBlock .reportOutput .headerRow th,
+.bPageBlock .reportOutput .headerRow td {
+    border-style: solid;
+    border-color: #D4DADC;
+    border-width: 0 0 1px 1px;
+}
+.bPageBlock .reportOutput .floatingHeader th:first-child {
+    border: none;
+}
+.bPageBlock .reportOutput .headerRow th:first-child,
+.bPageBlock .reportOutput .headerRow td:first-child {
+    border-style: solid;
+    border-color: #D4DADC;
+    border-width: 0 0 1px 0;
+}
+.bPageBlock .reportOutput .floatingHeader th a,
+.bPageBlock .reportOutput .headerRow th a {
+    text-decoration: none;
+}
+.bPageBlock .reportOutput .floatingHeader th a:hover,
+.bPageBlock .reportOutput .headerRow th a:hover {
+    text-decoration: underline;
+    color: #015BA7;
+}
+.bPageBlock .reportOutput .floatingHeader th.sortCol,
+.bPageBlock .reportOutput .headerRow th.sortCol {
+    background: #C4E7F2;
+}
+.bPageBlock .reportOutput td,
+.bPageBlock .reportOutput th {
+    padding-right: 6px;
+}
+.bPageBlock .reportOutput .even {
+    background-color: #F5F7FF;
+}
+.bPageBlock .reportOutput .drilldown {
+    width: 24px;
+}
+.bPageBlock .reportOutput .drilldown input {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tabular/Summary Reports */
+.bPageBlock .reportOutput .tabularReportTable .headerRow {
+    background: #fff url('/img/alohaSkin/grid_headerbg.gif') 0 bottom repeat-x;
+    font-size: 0.9em;
+}
+.bPageBlock .reportOutput .tabularReportTable .breakRowClass0 {
+    background-color: #D5DDF3;
+    vertical-align: baseline;
+}
+.bPageBlock .reportOutput .tabularReportTable .breakRowClass1 {
+    background-color: #EFF4FC;
+    vertical-align: baseline;
+}
+.bPageBlock .reportOutput .tabularReportTable .breakRowClass2 {
+    background-color: #F3FEFF;
+    vertical-align: baseline;
+}
+.bPageBlock .reportOutput .tabularReportTable .breakRowClass0Top td {
+    border-top: 1px solid #BFC4D4;
+}
+.bPageBlock .reportOutput .tabularReportTable .breakRowClassBottom td {
+    border-bottom: 1px solid #D4DADC;
+}
+.bPageBlock .reportOutput .tabularReportTable tr.grandTotal {
+    border-top: 1px solid #333;
+}
+.bPageBlock .reportOutput .tabularReportTable .grandTotal {
+    background-color: #818290;
+    color: #FFF;
+    font-weight: bold;
+}
+.bPageBlock .reportOutput .tabularReportTable tr.grandTotal th,
+.bPageBlock .reportOutput .tabularReportTable tr.grandTotal td {
+    color: #FFF;
+    font-weight: bold;
+}
+.bPageBlock .reportOutput .tabularReportTable .grandTotalTop td {
+    border-top: 2px solid #555567;
+    font-size: 1.2em;
+}
+
+/* Matrix Reports */
+.bPageBlock .matrixReportTable th,
+.bPageBlock .matrixReportTable td {
+    border-style: solid;
+    border-color: #D4DADC;
+    border-width: 0 0 1px 1px;
+    vertical-align: top;
+}
+.bPageBlock .reportOutput .matrixReportTable .headerRow th,
+.bPageBlock .reportOutput .matrixReportTable .headerRow td {
+    border-color: #C8CDCF;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    color: #000000;
+    font-size: 0.9em;
+}
+.bPageBlock .reportOutput .matrixReportTable .headerRow th:first-child,
+.bPageBlock .reportOutput .matrixReportTable .headerRow td:first-child {
+    border-color: #C8CDCF;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+.bPageBlock .reportOutput .matrixReportTable .headerRow th a:hover,
+.bPageBlock .reportOutput .matrixReportTable .headerRow td a:hover {
+    text-decoration: underline;
+    color: #015BA7;
+}
+.bPageBlock .reportOutput .matrixReportTable .headerRow .headerEmptyCell {
+    background-color: #DBF2F9;
+    border-width: 0 0 1px 0;
+}
+.bPageBlock .reportOutput .matrixReportTable .headerDetail {
+    background-color: #D6DAE0;
+}
+.bPageBlock .reportOutput .matrixReportTable td.headerDetailTop {
+    border-bottom: none;
+}
+.bPageBlock .reportOutput .matrixReportTable .headerDark {
+    background: #fff url('/img/alohaSkin/darkerblue_gradient.png') 0 top repeat-x;
+}
+.bPageBlock .reportOutput .matrixReportTable .headerLight {
+    background: #fff url('/img/alohaSkin/grid_headerbg.gif') 0 bottom repeat-x;
+    text-align: center;
+}
+.bPageBlock .reportOutput .matrixReportTable .leftBreak {
+    background-color: #E8E9EC !important;
+    font-weight: bold;
+    border-width: 0 0 1px 0;
+}
+.bPageBlock .reportOutput .matrixReportTable .dataRow td {
+    background-color: #FFFFFF;
+}
+.bPageBlock .reportOutput .matrixReportTable .detailRow td {
+    background-color: #EFF1F3;
+}
+.bPageBlock .reportOutput .matrixReportTable .subTotalRow td {
+    background-color: #F5F7FF;
+    border-bottom: 2px solid #8E8EAD;
+}
+.bPageBlock .reportOutput .matrixReportTable th.subTotal,
+.bPageBlock .reportOutput .matrixReportTable td.subTotal {
+    background-color: #F5F7FF;
+}
+.bPageBlock .reportOutput .matrixReportTable .subTotalTitle {
+    text-align: right;
+}
+.bPageBlock .reportOutput .matrixReportTable .grandTotalRow th,
+.bPageBlock .reportOutput .matrixReportTable .grandTotalRow td {
+    background-color: #818290;
+    color: #FFF;
+}
+.bPageBlock .reportOutput .matrixReportTable .grandTotalRow th:first-child,
+.bPageBlock .reportOutput .matrixReportTable .grandTotalRow td:first-child {
+    border-color: #C8CDCF;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+.bPageBlock .reportOutput .matrixReportTable .grandTotalRow .grandTotalTitle {
+    border-width: 0 0 1px 0;
+}
+.bPageBlock .reportOutput .matrixReportTable .grandTotal {
+    background-color: #818290 !important;
+    color: #FFF !important;
+}
+.bPageBlock .reportOutput .matrixReportTable .grandTotalTitle {
+    text-align: right;
+    font-size: 1.2em !important;
+}
+body.CalcAggPopup {
+    background: #f8f8f8 none;
+    margin: 0;
+    padding: 0;
+}
+body.CalcAggPopup .bWizardBlock .pbWizardBody {
+    border-top: 0 none;
+}
+body.CalcAggPopup .bWizardBlock .pbDescription {
+    border-bottom: 0 none;
+}
+body.CalcAggPopup .bWizardBlock .bEditBlock .pbSubsection table.detailList td[colspan="4"] {
+    padding: 0;
+}
+body.CalcAggPopup .bWizardBlock .bEditBlock .pbSubheader {
+    margin-bottom: 10px;
+}
+
+/* End Reports */
+
+
+

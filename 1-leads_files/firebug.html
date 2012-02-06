@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Firebug</title>
+    <link rel="stylesheet" type="text/css" href="firebug_data/firebug.css">
+</head>
+
+<body>
+    <div id="toolbar" class="toolbar">
+        <a href="#" onclick="parent.console.clear()">Clear</a>
+        <span class="toolbarRight">
+            <a href="#" onclick="parent.console.close()">Close</a>
+        </span>
+    </div>
+    <div style="top: 20px; height: 159px;" id="log"><div class="logRow logRow-debug">:: Welcome to Marketo!</div><div class="logRow logRow-debug">:: Customer Prefix: mindjet</div><div class="logRow logRow-debug">:: Cluster Hostname: gweb1.marketo.org</div><div class="logRow logRow-debug">:: Saved State: <span class="objectBox-object">Object</span></div><div class="logRow logRow-debug"> </div><div class="logRow logRow-debug">MktMainNav.loadLeadDb <span class="objectBox-object">Object</span></div><div class="logRow">making a request to: leadDatabase/generateFullExplorer</div><div class="logRow logRow-debug">MktCanvas generated async unmask id: async-unmask-ext-gen125</div><div class="logRow logRow-debug">adding json to cache: leadDatabase/generateFullExplorer exp <span class="objectBox-object">Object</span></div><div class="logRow logRow-debug">totalCountPrecision= last</div><div class="logRow logRow-debug">Loading... (about 59873 leads)</div><div class="logRow logRow-debug">totalCountPrecision= exact</div><div class="logRow logRow-debug">Loading... (60941 leads)</div></div>
+    <input style="top: 179px;" id="commandLine" type="text">
+    
+    <script>parent.onFirebugReady(document);</script>
+
+
+</body></html>

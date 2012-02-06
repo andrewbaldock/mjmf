@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<title>✰ ✰ ANDREW BALDOCK ✰ ✰ </title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Refresh" content="180; "> 
+
+<link href='http://fonts.googleapis.com/css?family=Oswald|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+
+<style>
+html, body {
+width:100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+font-family: 'Oswald', sans-serif;
+letter-spacing:0.05em;
+color:#777;
+font-weight:normal!important;
+text-align:center;
+}
+.wrapper {
+text-align:center;
+}
+h2 {
+width:70%;
+margin-left:15%;
+margin-right:15%;
+background:#e9e9e9;
+height:1.4em;
+} 
+p {
+margin-right:10%;
+margin-left:10%;
+padding-right:10%
+padding-left:10%;
+font-size:2em;
+}
+ul {
+font-size:1.3em;
+}
+.padder {
+width:100%;
+height:2em;
+}
+.lefty {
+text-align:left;
+padding-left:20%;
+padding-right:20%;
+}
+</style>
+
+</head>
+
+<body>
+<br>
+<h1>Andrew Baldock: A Quick Case for a Raise</h1>
+<br>
+<h2>Exhibit A:</h2>
+
+<a href="baldock-review-2011.pdf"><img src="review-thumb.png"></a>
+<div class="padder"></div>
+<h2>Exhibit B:</h2>
+
+<img src="hits.png">
+<div class="padder"></div>
+<h2>Exhibit C:</h2>
+<div class="wrapper">
+    <div id="visualization"></div>
+</div>
+<div class="padder"></div>
+<h2>In Conclusion:</h2>
+<div class="lefty">
+<p><ul><li>I love working for Mindjet, being an achiever and a mentor.</li>
+<li>My payroll title is 'Developer' but I feel more like an Architect and Senior Developer.</li>
+<li>Life's expensive but my salary has been stagnant for a few years.</li>
+<li>I want nothing more than to keep delivering for Mindjet..to keep the hits coming.</li>
+</ul></p>
+</div>
+<p>That's my case for a January 2011 raise.<br>Thanks for listening!</p>
+
+<p>Andrew</p>
+  
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['corechart']});
+    </script>
+    <script type="text/javascript">
+      function drawVisualization() {
+        // Create and populate the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'x');
+        data.addColumn('number', 'Salary');
+        data.addColumn('number', 'Costs');
+        data.addRow(["2007", .6, .54]);
+      
+        data.addRow(["2008", .6, .55]);
+        data.addRow(["2009", .6, .56]);
+        data.addRow(["2010", .6, .58]);
+        data.addRow(["2011", .6, .61]);
+        data.addRow(["2012?", .6, .65]);
+      
+       
+        // Create and draw the visualization.
+        new google.visualization.LineChart(document.getElementById('visualization')).
+            draw(data, {curveType: "function",
+                        width: 500, height: 400,
+                        vAxis: {maxValue: .7}}
+                );
+      }
+      
+
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+    <div class="padder"></div>
+</body>
+</html>
