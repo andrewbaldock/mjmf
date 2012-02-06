@@ -10664,6 +10664,50 @@ body.eventTab td.buttonFooter div.minWidth {
 
 
 
+.miniTab .currentTab,
+.miniTab .currentTab a {
+	padding-bottom: 2px;
+	padding-top: 5px;
+}
+
+/* places counter on textareas in ILE */
+.inlineEditCompoundDiv .textCounterMiddle {
+	left:30px;
+}
+
+/* async report mutton hack */
+.reportWizardButtons .menuButton,
+.reportActions .menuButton {
+    position: relative;
+}
+.bFilterReport .menuButtonButton, .bWizardBlock .menuButtonButton{
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+/* quote sync button padding fix */
+.btnIcon {
+	padding-left: 15px;
+}
+
+/* chatter user profile overlay */
+.uppEditItem .editContactInfoValue textarea {
+    padding-right: 2px;
+}
+
+.PeopleListPage .quickfindContainer .x-form-field-wrap img.x-form-trigger, 
+.GroupListPage .quickfindContainer .x-form-field-wrap img.x-form-trigger {
+    right: auto;
+}
+
+/* The "Customize..." popup for search results. Safari has a different positioning 
+   for the popup which we need to override */
+.searchColumnSelector {
+  right: 31em;
+}
+
+
+
 /* This file is used to serve unanchored hovers (see W-728757) to all browsers except IE7 */
 
 body button:hover,
@@ -10870,6 +10914,16 @@ span.pbSubExtra a.linkCol .linkSpan:hover {
 }
 .listViewport .refreshListButton:hover {
     background-position: 2px -20px;
+}
+
+
+
+.bCalendar .calendarDayWeekView .eventBlockDivDnD:hover{
+    border-width: 0 1px 1px 0 !important;
+    border-color: #CCCCCC !important;
+}
+.listViewport .refreshListButton:hover {
+    background-position: 2px -19px;
 }
 
 

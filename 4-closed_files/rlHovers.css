@@ -218,3 +218,10 @@ body.rlHoverFrame .bPageBlock{
 
 
 
+/** Related hovers **/
+.rlHoverFrame .bPageBlock{
+    padding-bottom: 9px;
+}
+
+
+

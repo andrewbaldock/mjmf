@@ -4950,3 +4950,98 @@ body.tablessView .bgdPalette {
 
 
 
+/**
+ * This is the safari-specific aloha skin override style sheet
+ *
+ * @author jlevine, nmcwilliams
+ * @since 164
+ */
+
+/** Page Title **/
+body .bodyDiv .bPageTitle .blank{
+    height: 0;
+}
+
+/** Header Messaging **/
+.bPageHeader .multiforce .msgContent.topFix {
+	position: relative;
+	top: -2px;
+}
+body input.btnImportant {
+    padding-bottom: 2px;
+    padding-top: 1px;
+}
+body .bPageHeader .phHeader input.subscribeNow,
+body .bPageHeader .phHeader input.upgradeNow {
+	padding-top: 4px;
+	padding-bottom: 3px;
+}
+
+/** Buttons **/
+body input.btn,
+body input.btnDisabled,
+body input.btnCancel {
+    padding:4px 3px;
+}
+body .menuButton .menuButtonButton {
+    padding:4px 22px 4px 5px;
+}
+body input.btnIcon {
+    padding-left: 21px;
+}
+
+/** Detail Block **/
+body .bDetailBlock.bPageBlock .pbBody .dataCol{
+    border-right-color: #fff;
+}
+
+/** Related lists **/
+body .bRelatedList .bPageBlock .pbButton input.btn,
+body .bRelatedList .bPageBlock .pbButton input.btnDisabled,
+body.homeTab .bMyCalendar .pbButton input.btn,
+body.homeTab .bMyDashboard .pbButton input.btn,
+.sidebarModuleBody input.btn,
+.bFilterView input.btn {
+    padding: 2px 3px;
+}
+body .bRelatedList .pbTitle .relatedListIcon{
+    margin-top: -4px;
+    top: 3px;
+}
+body .bRelatedList .bPageBlock .menuButton .menuButtonButton {
+    padding:2px 22px 2px 5px;
+}
+
+/** Date picker **/
+.datePicker .dateBar .calLeft,
+.datePicker .dateBar .calLeftOn,
+.datePicker .dateBar .calRight,
+.datePicker .dateBar .calRightOn{
+    margin-top: 4px;
+}
+
+/** Dashboard **/
+.acContainer .acTrigger{
+    margin-top:-1px;
+}
+
+/** Stay-In-Touch **/
+body.stayInTouch div.sitDNSButton {
+	left: 20px;
+}
+
+.bPageHeader .phHeader td.messages{
+	padding-top: 10px;
+}
+/** ELV **/
+.listViewport .refreshListButton {
+    height: 23px;
+    background-position: 2px 3px;
+}
+
+.listViewport .refreshListButtonNeeded {
+    background-position: 2px -41px;
+}
+
+
+
